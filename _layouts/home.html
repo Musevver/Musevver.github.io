@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+    <h1>Posts</h1>
+    <ul class="post-list">
+      {% assign posts_sorted = site.posts | sort: "date" | reverse %}
+      {% for post in posts_sorted %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          {% if post.excerpt %}
+            <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</main>

@@ -1,5 +1,7 @@
-title: "Ideal Conditions" 
-description: "" 
-theme: minima 
-markdown: kramdown 
-kramdown: input: GFM
+title: "Ideal Conditions"
+description: ""
+theme: minima
+
+markdown: kramdown
+kramdown:
+  input: GFM

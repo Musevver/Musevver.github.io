@@ -7,3 +7,14 @@ $brand-color:      #b07f1a;
 $code-background-color: #f1e9d2;
 
 @import "minima";
+
+.header-flex { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.brand { display:flex; flex-direction:column; align-items:flex-start; gap:.2rem; }
+.site-title { letter-spacing:-0.01em; text-decoration:none; color:inherit; }
+.site-tagline {
+  font-size: .95rem;
+  font-variant-caps: small-caps;
+  letter-spacing: .06em;
+  opacity: .7;
+  margin-top: .1rem;
+}

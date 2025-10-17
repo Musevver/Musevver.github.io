@@ -1,10 +1,16 @@
-{% assign is_home = page.url == "/" or page.url == site.baseurl | append: "/" %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>
-  {% if page.title and not is_home %}{{ page.title }} · {{ site.title }}
-  {% else %}{{ site.title }}
+  {% comment %}
+  On home: just the site title.
+  On other pages: "Page Title · Site Title".
+  (No boolean assign; Liquid `assign` can't do `or/==`.)
+  {% endcomment %}
+  {% if page.title and page.url != "/" and page.url != (site.baseurl | append: "/") %}
+    {{ page.title }} · {{ site.title }}
+  {% else %}
+    {{ site.title }}
   {% endif %}
 </title>
 

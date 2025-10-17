@@ -1,9 +1,28 @@
 title: "Ideal Conditions"
 description: ""
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: sunrise
+
+remote_theme: "mmistakes/minimal-mistakes"
+
+minimal_mistakes_skin: "dark"
 
 markdown: kramdown
 kramdown:
   input: GFM
 
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single 
+      author_profile: true
+      read_time: true
+      comments: false
+      toc: true
+      toc_label: "On this page"

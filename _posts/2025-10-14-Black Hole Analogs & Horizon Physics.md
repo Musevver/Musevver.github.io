@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Black Hole Analogs & Horizon Physics"
+author: "Musevver Ugursal"
 ---
 
 
-Black holes prove to be an increasingly fascinating rabbit hole for me. The idea that through Einstein's field equations you can have solutions that permit regions of space dominated by a *singularity* and shielded from view via the *event horizon* (a region of spacetime where the escape velocity equals the speed of light) is an idea so absurd in principle that Einstein himself failed to consider its physicality. A lot of focus is given to the singularity and while it is an area of immense theoretical potential it is inaccessible by all modes of measure as it hides behind the event horizon, this proves frustrating as in physics there exists a contemporary tension between **Quantum Field Theory** & **General Relativity** as to what the fundamental nature of gravity is. 
+Black holes prove to be an increasingly fascinating rabbit hole for me. The idea that through Einstein's field equations you can have solutions that permit regions of space dominated by a *singularity* and shielded from view via the *event horizon* (a region of spacetime where the escape velocity equals or even exceeds the speed of light i.e. the causal boundary) is an idea so absurd in principle that Einstein himself failed to consider its physicality. A lot of focus is given to the singularity and while it is an area of immense theoretical potential it is inaccessible by all modes of measure as it hides behind the event horizon, this proves frustrating as in physics there exists a contemporary tension between **Quantum Field Theory** & **General Relativity** as to what the fundamental nature of gravity is. 
 
 
 They are both highly successful and celebrated theories and yet they give **fundamentally** incompatible answers to the question of "*how does gravity behave on the scale of quantum mechanics?*". This is where black holes shine, they act as stress tests for both the relativistic theory and the quantum theory simultaneously, however, given that the singularity is irrevocably hidden behind the horizon it might seem as though all progress in our understandings of black holes are hopelessly locked away but this isn't the case. I was reading a paper by Unruh & Wald in which they discuss what the vacuum would appear to be for an accelerating observer far out in flat space, the conclusion is fascinating, an accelerated observer would measure the vacuum to have *thermality* and they would be able to physically justify this result both through relativity and quantum mechanics. Admittedly the math used in the paper got to be too much for me towards the end and I couldn't find any useful supplemental materials from either author as quite literally everything that Unruh and Wald have ever written are above anything I can currently follow through, however I was able to write code using these principles(more on that later).
@@ -44,6 +45,12 @@ Note the $$\hbar$$, this is a consequence of translating a time periodicity into
 
 $$ e^{-i H t / \hbar} $$
 
+A truly remarkable result, the Unruh effect challenges our idea of a vacuum and how a horizon gives rise to thermality, from it we gain some important insights about black holes. Notably, we no longer view the horizon as a dead-end, instead we now see it as a tool that allows us to develop new theories that will get us closer towards a theory of quantum gravity. The issue now is to build a model of an observer-*independent* black hole horizon from the obeserver-*dependent* rindler horizon described by the Unruh effect, and I will lament that the unruh effect derivation just about killed me trying to understand it and that generalizing it would be an even taller task. For this reason I am going to chicken out and instead take a page out of Aristotle's book as I attempt to "reason" the global solution from the unruh effect, the general reasoning is sound although not rigorous in the slightest, it is as follows:
+
+1. Consider the Unruh thermality derived earlier
+2. Now consider the equivalence principle which briefly states that "a gravitational field and an acceleration field are locally indistinguishable"
+3. Reconcile then, that we can accurately model the black hole horizon locally using the unruh effect
+4. 
 
 <script>
 window.MathJax = {

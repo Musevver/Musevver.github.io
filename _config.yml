@@ -1,10 +1,11 @@
 title: "Ideal Conditions"
-description: "where good ideas go to die"
+description: "testing nature's patience with every post"
 theme: minima
 
 markdown: kramdown
 kramdown:
   input: GFM
+
 
 
 

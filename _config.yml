@@ -1,15 +1,11 @@
 title: "Ideal Conditions"
 description: ""
-remote_theme: jekyll/minima@latest
-plugins:
-  - jekyll-remote-theme
-  
-minima:
- skin: dark
+theme: minima
 
 markdown: kramdown
 kramdown:
   input: GFM
+
 
 
 

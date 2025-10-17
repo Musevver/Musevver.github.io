@@ -48,9 +48,13 @@ $$ e^{-i H t / \hbar} $$
 A truly remarkable result, the Unruh effect challenges our idea of a vacuum and how a horizon gives rise to thermality, from it we gain some important insights about black holes. Notably, we no longer view the horizon as a dead-end, instead we now see it as a tool that allows us to develop new theories that will get us closer towards a theory of quantum gravity. The issue now is to build a model of an observer-*independent* black hole horizon from the observer-*dependent* Rindler horizon described by the Unruh effect, and I will lament that the Unruh effect derivation just about killed me trying to understand it and that generalizing it would be an even taller task. For this reason I am going to chicken out and instead I will do what any self-respecting physics student would do and attempt to "reason" the global solution from the Unruh effect, the general reasoning is sound although not rigorous in the slightest, it is as follows:
 
 1. Consider the Unruh thermality derived earlier.
+ 
 2. Now consider the equivalence principle which briefly states that "a gravitational field and an acceleration field are locally indistinguishable".
+ 
 3. Therefore, what we previously assigned as *acceleration*-thermality is now indistinguishable from *gravitational*-thermality.
+
 4. Reconcile then, that we can accurately model the black hole horizon locally using the Unruh effect.
+  
 5. Finally, a global solution is found once an outside observer is considered. This outside observer sees the radiation bleed from the black hole and redshift to infinity.
 
 That final result is fascinating actually, the fact that through simple reasoning and logic(and a lot of math!) you now have this picture of a black hole that "bleeds". Your first instinct might be to think that this is some kind of relativistic "trick" but it is indeed real, the black hole radiates energy outward(very slowly!) and therefore loses mass in the process. What's really amazing to me actually is that timeline-wise, this global and more universal effect was formulated earlier than the Unruh effect by Stephen Hawking. This effect has since been named in honour of him, Hawking radiation.

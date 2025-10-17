@@ -1,7 +1,10 @@
 title: "Ideal Conditions"
 description: ""
 theme: minima
+minima:
+  skin: solarized
 
 markdown: kramdown
 kramdown:
   input: GFM
+

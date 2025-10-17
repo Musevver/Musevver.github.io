@@ -36,7 +36,7 @@ Next we use a known result from quantum mechanics, the correlation between imagi
 
 $$ T = \frac{1}{k_B \beta} $$
 
-We then substitute the $$\beta$$ we obtained before to acheive the Unruh thermality:
+We then substitute the $$\beta$$ we obtained before to achieve the Unruh thermality:
 
 $$ T_U = \frac{\hbar a}{2\pi c k_B} $$
 

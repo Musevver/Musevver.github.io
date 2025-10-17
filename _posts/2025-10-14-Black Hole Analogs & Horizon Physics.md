@@ -55,6 +55,18 @@ A truly remarkable result, the Unruh effect challenges our idea of a vacuum and 
 
 That final result is fascinating actually, the fact that through simple reasoning and logic(and a lot of math!) you now have this picture of a black hole that "bleeds". Your first instinct might be to think that this is some kind of relativistic "trick" but it is indeed real, the black hole radiates energy outward(very slowly!) and therefore loses mass in the process. What's really amazing to me actually is that timeline-wise, this more complicated effect was formulated earlier than the Unruh effect by Stephen Hawking. This effect has since been named in honour of him, Hawking radiation.
 
+Now all that remains is experimental evidence in favour of Hawking radiation and we have our first foothold towards finally understanding black holes, as Carl Sagan would say "*Extraordinary claims require extraordinary evidence*", but how do you even go about experimenting with a black hole? Unruh's formulation and Hawking's formulation have something in common, they are scale-*independent* and mass/gravity-*independent*, they are only dependent on two things:
+
+1. A horizon.
+2. A space-time.
+   
+and if you're thinking "*yeah but that's the hard part*" it turns out, in fact, to be the easiest part. Crucially, scale and mass independence mean that we don't need a giant undisturbed patch of spacetime with an event horizon, we need an object that behaves like a horizon and we need a medium that behaves like a space-time, let's refine what we're looking for:
+
+1. A horizon *analog*.
+2. A space-time *analog*.
+
+The word analog means equivalent, reminiscent of the equivalence principle, the very fact that analogs are now in play means this problem has gone from a "thinking hard" problem to a "thinking different" problem. We first tackle the horizon analog, ultimately a horizon has two conditions:
+
 
 
 <script>

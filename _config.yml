@@ -1,8 +1,9 @@
-title: "Ideal Conditions"
-description: "A physics blog"
+title: "Ideal Conditions... a physics blog"
+description: ""
 theme: minima
 
 markdown: kramdown
 kramdown:
   input: GFM
+
 

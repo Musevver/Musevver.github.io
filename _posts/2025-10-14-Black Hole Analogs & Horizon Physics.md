@@ -51,7 +51,7 @@ A truly remarkable result, the Unruh effect challenges our idea of a vacuum and 
 
 1. Consider the Unruh thermality derived earlier.
  
-2. Now consider the equivalence principle which briefly states that "a gravitational field and an acceleration field are locally indistinguishable".
+2. Now consider the equivalence principle which states that "a gravitational field and an acceleration field are locally indistinguishable".
  
 3. Therefore, what we previously assigned as *acceleration*-thermality is now indistinguishable from *gravitational*-thermality.
 

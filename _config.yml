@@ -3,7 +3,7 @@ description: ""
 
 remote_theme: "mmistakes/minimal-mistakes"
 
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "sunrise"
 
 markdown: kramdown
 kramdown:
@@ -26,3 +26,4 @@ defaults:
       comments: false
       toc: true
       toc_label: "On this page"
+

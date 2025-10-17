@@ -2,7 +2,4 @@
 ---
 
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
-
 @import "minima/initialize";
-
-.post-content, .page-content { max-width: 70ch; margin-inline: auto; }

@@ -65,9 +65,19 @@ and if you're thinking "*yeah but that's the hard part*" it turns out, in fact, 
 1. A horizon *analog*.
 2. A space-time *analog*.
 
-The word analog means equivalent, reminiscent of the equivalence principle, the very fact that analogs are now in play means this problem has gone from a "thinking hard" problem to a "thinking different" problem. We first tackle the horizon analog, ultimately a horizon has two conditions:
+The word analog means equivalent, reminiscent of the equivalence principle, the very fact that analogs are now in play means this problem has gone from a "thinking hard" problem to a "thinking different" problem. We first tackle the horizon analog, ultimately a horizon has two conditions, it must be:
 
+1. A one-way information boundary.
+2. Causally defined in an effective space-time.
 
+The only way to manipulate light such that it satisfies the two conditions above is if we had an event horizon but since we're fresh out we need another kind of wave to manipulate, a natural progression is a sound wave as it's easily manipulable and observable. Therefore we will consider the "*Sonic horizon*" as a useful analog.
+
+We now tackle the concept of a space-time analog, the two conditions for a space-time are that:
+
+1. It must provide a metric.
+2. It must appear continuous.
+
+We have already selected a great analog for the horizon, this constrains what we can now select as a useful space-time analog, clearly it must be dense as we must propagate sound through it but it must also be easily manipulable, smooth on the scales of sound waves, cold so that noise doesn't overpower our sound waves. Cold, smooth, manipulable, that's a textbook description of a Bose-Einstein condensate and indeed it checks all the boxes that we require from it. And so now we have a useful space-time analog in the form of a Bose-Einstein condensate.
 
 <script>
 window.MathJax = {

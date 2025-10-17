@@ -4,7 +4,12 @@ layout: default
 
 <main class="page-content" aria-label="Content">
   <div class="wrapper">
-    <h1>Posts</h1>
+    <div class="blog-hero">
+  <h1>{{ site.title | default: "Posts" }}</h1>
+  <p class="lead">
+    {{ site.description | default: "A physics blog" }}
+  </p>
+</div>
     <ul class="post-list">
       {% assign posts_sorted = site.posts | sort: "date" | reverse %}
       {% for post in posts_sorted %}

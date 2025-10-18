@@ -3,7 +3,7 @@ layout: post
 title: "Black Hole Analogs & Horizon Physics"
 author: "Musevver Ugursal"
 excerpt: >
- Can we demystify black holes by creating one right there on earth?
+ Can we demystify black holes by creating one right here on earth?
 ---
 
 

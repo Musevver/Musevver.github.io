@@ -1,11 +1,11 @@
 title: "Ideal Conditions"
 description: "testing nature's patience with every post"
-email: musevveru@gmail.com
 theme: minima
 
 markdown: kramdown
 kramdown:
   input: GFM
+
 
 
 

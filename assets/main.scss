@@ -23,9 +23,9 @@ $base-font-weight: 400;
 @font-face {
   font-family: "TiemposText";
   /* Use relative_url so this works for both user-pages and project-pages */
-  src: url('{{ "/assets/fonts/TiemposText-RegularItalic.otf" | relative_url }}') format("opentype");
+  src: url('{{ "/assets/fonts/TiemposText-Regular.otf" | relative_url }}') format("opentype");
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -33,7 +33,7 @@ $base-font-weight: 400;
 body {
   font-family: $base-font-family;
   font-weight: $base-font-weight;
-  font-style: italic;
+  font-style: normal;
   color: $text-color;
   background-color: $background-color;
 }

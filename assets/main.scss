@@ -61,6 +61,14 @@ code, pre, kbd, samp {
   color: $brand-color;
 }
 
+/* Ensure site title never changes after visit */
+.site-title,
+.site-title:visited {
+  color: $brand-color;
+}
+
+
+
 .site-tagline {
   font-family: inherit;
   font-weight: 400;

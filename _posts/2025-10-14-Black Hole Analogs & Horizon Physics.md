@@ -36,14 +36,14 @@ Note that the $$2\pi$$ is a direct consequence of the polar-coordinate analog fr
 
 Next we use a known result from quantum mechanics, the correlation between imaginary-time periodicity and thermal states.
 
-$$ T = \frac{1}{\color{#D97757}{k_B} \beta} $$
+$$ T = \frac{1}{{\color{#D97757}{k_B}} \beta} $$
 
 We then substitute the $$\beta$$ we obtained before to achieve the Unruh thermality:
 
-$$ T_U = \frac{\color{#D97757}{\hbar} a}{2\pi {\color{#D97757}{c}} {\color{#D97757}{k_B}}} $$
+$$ T_U = \frac{{\color{#D97757}{\hbar}} a}{2\pi {\color{#D97757}{c}} {\color{#D97757}{k_B}}} $$
 
 
-Note the $${\color{#D97757}{\hbar}}$$, this is a consequence of translating a time periodicity into an energy scale via the relation:
+Note the $${\hbar}$$, this is a consequence of translating a time periodicity into an energy scale via the relation:
 
 $$ e^{-i H t / {\color{#D97757}{\hbar}}} $$
 

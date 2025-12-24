@@ -1,0 +1,117 @@
+---
+---
+/*
+  Theme tokens (Claude-inspired)
+  - Background: rgb(38, 38, 36)
+  - Accent:     rgb(217, 119, 87)
+  - Text:       rgb(240, 239, 235)
+*/
+$background-color: #262624;
+$text-color:       #F0EFEB;
+$link-base-color:  #D97757;
+$brand-color:      #D97757;
+/* Slightly lighter surface for code blocks on dark background */
+$code-background-color: #30302E;
+
+/* Base typography */
+$base-font-family: "TiemposText", serif;
+$base-font-weight: 400;
+
+@import "minima";
+
+/* Local font (uploaded) */
+@font-face {
+  font-family: "TiemposText";
+  /* Use relative_url so this works for both user-pages and project-pages */
+  src: url('{{ "/assets/fonts/TiemposText-Regular.otf" | relative_url }}') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ensure the site consistently uses the requested face */
+body {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-style: normal;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+/* Keep code readable and non-italic */
+code, pre, kbd, samp {
+  font-style: normal;
+}
+
+.header-flex { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; }
+.brand { display:flex; flex-direction:column; align-items:flex-start; gap:.1rem; }
+
+.site-title {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header .page-link {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: .95rem;
+  color: inherit;
+  opacity: .65;
+  text-decoration: none;
+  padding: 0 .25rem;
+}
+.site-header .page-link:hover,
+.site-header .page-link:focus {
+  opacity: 1;
+  color: $link-base-color;
+  text-decoration: underline;
+}
+
+.site-tagline {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: .9rem;
+  letter-spacing: .02em;
+  text-transform: none;
+  opacity: .55;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 850px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.site-header .site-nav { margin-left: auto; }
+
+@media (min-width: 700px) {
+  .site-header .nav-trigger,
+  .site-header label[for="nav-trigger"] { display: none !important; }
+
+  .site-header .site-nav .trigger {
+    display: flex !important;
+    gap: .75rem;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Header + post title tweaks (requested)
+   -------------------------------------------------------------------------- */
+
+/* Remove Minima's top bar and make header blend into the page background */
+.site-header {
+  background-color: $background-color;
+  border-top: 0;
+}
+
+/* Ensure the post page title uses the accent (terracotta) color */
+.post-title {
+  color: $brand-color;
+}

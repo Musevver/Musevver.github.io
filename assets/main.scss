@@ -145,11 +145,54 @@ code, pre, kbd, samp {
 /* Remove the subtitle / description under the site title */
 .site-tagline { display: none !important; }
 
-/* Accent borders / dividers */
-.site-header { border-bottom: 1px solid $brand-color; }
-.site-footer { border-top: 1px solid $brand-color; }
-hr { border: 0; border-top: 1px solid $brand-color; }
+/* Accent usage tuning: keep orange “special” */
+.site-title,
+.site-title:visited,
+.post-title {
+  color: $brand-color;
+}
 
-/* Keep link colors consistent after visiting (disable :visited color shifts) */
-a:visited { color: $brand-color; }
-.site-nav .page-link:visited { color: $text-color; }
+/* Structural lines: subtle neutral instead of accent */
+.site-header {
+  border-bottom: 1px solid rgba($text-color, 0.12);
+}
+.site-footer {
+  border-top: 1px solid rgba($text-color, 0.12);
+}
+hr {
+  border: 0;
+  border-top: 1px solid rgba($text-color, 0.12);
+}
+
+/* Links: keep consistent after visiting, use accent on interaction */
+a,
+a:visited {
+  color: $text-color;
+}
+a:hover,
+a:focus {
+  color: $brand-color;
+}
+
+/* Header nav links: neutral by default, accent on hover/focus */
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: rgba($text-color, 0.80);
+}
+.site-nav .page-link:hover,
+.site-nav .page-link:focus {
+  color: $brand-color;
+}
+
+/* Footer text: neutral (don’t spend accent here) */
+.site-footer {
+  color: rgba($text-color, 0.65);
+}
+.site-footer a,
+.site-footer a:visited {
+  color: rgba($text-color, 0.80);
+}
+.site-footer a:hover,
+.site-footer a:focus {
+  color: $brand-color;
+}

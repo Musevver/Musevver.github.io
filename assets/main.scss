@@ -141,3 +141,7 @@ code, pre, kbd, samp {
 .site-header { border-bottom: 1px solid $brand-color; }
 .site-footer { border-top: 1px solid $brand-color; }
 hr { border: 0; border-top: 1px solid $brand-color; }
+
+/* Keep link colors consistent after visiting (disable :visited color shifts) */
+a:visited { color: $brand-color; }
+.site-nav .page-link:visited { color: $text-color; }

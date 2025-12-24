@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Background square - coral/terracotta -->
-  <rect x="30" y="40" width="140" height="140" rx="12" fill="rgb(217, 119, 87)"/>
-  
-  <!-- Front square - dark charcoal -->
-  <rect x="20" y="20" width="140" height="140" rx="12" fill="rgb(38, 38, 36)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="0" y="0" width="100" height="100" rx="12" fill="rgb(38, 38, 36)"/>
+  <path d="M25,100 Q100,25 100,100 Z" fill="rgb(245, 244, 240)"/>
+  <path d="M75,100 Q100,75 100,100 Z" fill="rgb(217, 119, 87)"/>
 </svg>

@@ -19,17 +19,17 @@ $$\require{color} t = \xi \sinh\!\Bigl(\frac{a\tau}{\color{#D97757}{c}}\Bigr) \q
 
 Above we have what a uniformly accelerated observer with hyperbolic acceleration would use for co-ordinates, where $$\xi$$ is the greek letter "*Xi*" representing how far the observer measures their own horizon to be, this then transforms their flat-space metric to become approximately (near the horizon):
 
-$$ ds^2 = - (a\xi)^2 (\color{#D97757}{c})^2\, d\tau^2 + d\xi^2 $$
+$$ ds^2 = - (a\xi)^2 ({\color{#D97757}{c}})^2\, d\tau^2 + d\xi^2 $$
 
 We then use a "Wick rotation" which will transform our time to an imaginary time, this allows us to treat time as an extra spatial dimension, allowing for a vast simplification in the derivation. Note that it's analogous to the polar-coordinate form of the metric.
 
-$$ ds^2 = (a\xi \color{#D97757}{c})^2\ dt_E^2 + d\xi^2 $$
+$$ ds^2 = (a\xi {\color{#D97757}{c}})^2\ dt_E^2 + d\xi^2 $$
 
 $$ ds^2 = r^2\ d\theta^2 + dr^2 $$
 
 One consequence of turning our time into an imaginary spatial component is that we must now account for its periodicity $$\beta$$.
 
-$$ \beta = \frac{2\pi \color{#D97757}{c}}{a} $$ 
+$$ \beta = \frac{2\pi {\color{#D97757}{c}}}{a} $$ 
 
 Note that the $$2\pi$$ is a direct consequence of the polar-coordinate analog from earlier.
 
@@ -40,12 +40,12 @@ $$ T = \frac{1}{\color{#D97757}{k_B} \beta} $$
 
 We then substitute the $$\beta$$ we obtained before to achieve the Unruh thermality:
 
-$$ T_U = \frac{\color{#D97757}{\hbar} a}{2\pi \color{#D97757}{c} \color{#D97757}{k_B}} $$
+$$ T_U = \frac{\color{#D97757}{\hbar} a}{2\pi {\color{#D97757}{c}} {\color{#D97757}{k_B}}} $$
 
 
-Note the $$\color{#D97757}{\hbar}$$, this is a consequence of translating a time periodicity into an energy scale via the relation:
+Note the $${\color{#D97757}{\hbar}}$$, this is a consequence of translating a time periodicity into an energy scale via the relation:
 
-$$ e^{-i H t / \color{#D97757}{\hbar}} $$
+$$ e^{-i H t / {\color{#D97757}{\hbar}}} $$
 
 Ultimately, what began as acceleration became heat, the hidden temperature of spacetime revealed through motion.
 

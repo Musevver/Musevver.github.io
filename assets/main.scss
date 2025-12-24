@@ -1,12 +1,47 @@
 ---
 ---
-$background-color: #f7f3e8;
-$text-color:       #2a2626;
-$link-base-color:  #805a14;
-$brand-color:      #b07f1a;
-$code-background-color: #f1e9d2;
+/*
+  Theme tokens (Claude-inspired)
+  - Background: rgb(38, 38, 36)
+  - Accent:     rgb(217, 119, 87)
+  - Text:       rgb(240, 239, 235)
+*/
+$background-color: #262624;
+$text-color:       #F0EFEB;
+$link-base-color:  #D97757;
+$brand-color:      #D97757;
+/* Slightly lighter surface for code blocks on dark background */
+$code-background-color: #30302E;
+
+/* Base typography */
+$base-font-family: "TiemposText", serif;
+$base-font-weight: 400;
 
 @import "minima";
+
+/* Local font (uploaded) */
+@font-face {
+  font-family: "TiemposText";
+  /* Use relative_url so this works for both user-pages and project-pages */
+  src: url('{{ "/assets/fonts/TiemposText-RegularItalic.otf" | relative_url }}') format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Ensure the site consistently uses the requested face */
+body {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-style: italic;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+/* Keep code readable and non-italic */
+code, pre, kbd, samp {
+  font-style: normal;
+}
 
 .header-flex { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; }
 .brand { display:flex; flex-direction:column; align-items:flex-start; gap:.1rem; }

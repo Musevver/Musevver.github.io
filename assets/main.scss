@@ -100,3 +100,18 @@ code, pre, kbd, samp {
     align-items: baseline;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Header + post title tweaks (requested)
+   -------------------------------------------------------------------------- */
+
+/* Remove Minima's top bar and make header blend into the page background */
+.site-header {
+  background-color: $background-color;
+  border-top: 0;
+}
+
+/* Ensure the post page title uses the accent (terracotta) color */
+.post-title {
+  color: $brand-color;
+}

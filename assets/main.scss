@@ -61,22 +61,6 @@ code, pre, kbd, samp {
   color: $brand-color;
 }
 
-.site-header .page-link {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: .95rem;
-  color: $brand-color;
-opacity: 1;
-text-decoration: none;
-  padding: 0 .25rem;
-}
-.site-header .page-link:hover,
-.site-header .page-link:focus {
-  opacity: 1;
-  color: $link-base-color;
-  text-decoration: underline;
-}
-
 .site-tagline {
   font-family: inherit;
   font-weight: 400;
@@ -116,41 +100,42 @@ text-decoration: none;
   background-color: $background-color;
   border-top: 0;
   border-bottom: 1px solid $brand-color;
+  padding: 0.85rem 0;
 }
 /* Ensure the post page title uses the accent (terracotta) color */
 .post-title {
   color: $brand-color;
 }
 
-/* Header: center site title, remove tagline */
+/* Header layout: balanced left/right (title left half, nav right half) */
 .site-header .wrapper {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
-}
-.site-header .site-title {
-  grid-column: 2;
-  justify-self: center;
-  margin: 0;
-  float: none;
-}
-.site-header .site-nav {
-  grid-column: 3;
-  justify-self: end;
-  float: none;
+  justify-content: space-between;
 }
 
+@media (min-width: 700px) {
+  .site-header .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .site-header .brand {
+    grid-column: 1;
+    justify-self: center;
+    margin: 0;
+  }
+  .site-header .brand .site-title {
+    margin: 0;
+  }
+  .site-header .site-nav {
+    grid-column: 2;
+    justify-self: center;
+    margin-left: 0;
+  }
+}
 /* Remove the subtitle / description under the site title */
 .site-tagline { display: none !important; }
-
-/* Footer copyright in accent color */
-.site-footer {
-  color: $brand-color;
-}
-.site-footer a {
-  color: $brand-color;
-}
-
 
 /* Accent borders / dividers */
 .site-header { border-bottom: 1px solid $brand-color; }

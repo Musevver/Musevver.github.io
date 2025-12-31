@@ -47,7 +47,7 @@ body {
 }
 
 .page-content {
-  padding: 1.35rem 0 3.5rem;
+  padding: 1.9rem 0 4.25rem;
 }
 
 code,
@@ -116,8 +116,8 @@ samp {
   margin: 0;
 }
 
-.wrapper {
-  max-width: 850px;
+\.wrapper {
+  max-width: 1020px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
@@ -134,21 +134,20 @@ samp {
 }
 
 .post-list > li {
-  padding: 1.5rem 0;
+  padding: 2.25rem 0;
+}
+
+.post-list > li:not(:last-child) {
   border-bottom: 1px solid rgba($text-color, 0.12);
 }
 
 .post-list > li:first-child {
-  border-top: 1px solid rgba($text-color, 0.12);
-}
-
-.post-list > li:last-child {
-  border-bottom: 0;
+  padding-top: 1.6rem;
 }
 
 .post-list .post-meta {
   display: block;
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.7rem;
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   opacity: 0.55;
@@ -156,16 +155,16 @@ samp {
 
 .post-list h3 {
   margin: 0;
-  line-height: 1.15;
-  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.12;
+  font-size: clamp(1.75rem, 2.4vw, 2.35rem);
 }
 
 .post-list p {
-  margin: 0.6rem 0 0;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: rgba($text-color, 0.92);
-  max-width: 70ch;
+  margin: 0.95rem 0 0;
+  font-size: 1.06rem;
+  line-height: 1.68;
+  color: rgba($text-color, 0.9);
+  max-width: 90ch;
 }
 
 
@@ -234,6 +233,14 @@ samp {
 }
 
 
+
+
+.post .post-header,
+.post .post-content {
+  max-width: 76ch;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (max-width: 720px) {
   .post .post-title {
     white-space: normal;

@@ -87,8 +87,7 @@ samp {
   }
 }
 
-.site-title,
-.site-title:visited {
+.site-title {
   font-family: "MoreDance", $base-font-family;
   font-weight: 400;
   line-height: 1;
@@ -119,16 +118,6 @@ samp {
   padding-right: 2rem;
 }
 
-.post-header,
-.post-content {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.post-header {
-  text-align: center;
-}
 
 .post-list {
   list-style: none;
@@ -147,6 +136,32 @@ samp {
 
 .post-list > li:last-child {
   border-bottom: 0;
+}
+
+
+.post-list .post-link,
+.post-list .post-link:visited {
+  color: rgba($text-color, 0.92);
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.75rem;
+  background-image: none;
+  background-size: auto;
+  background-position: 0 0;
+  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease, box-shadow 180ms ease;
+}
+
+.post-list .post-link:hover,
+.post-list .post-link:focus {
+  color: $brand-color;
+  background-color: rgba($brand-color, 0.12);
+  box-shadow: 0 0 0 10px rgba($brand-color, 0.08);
+  transform: scale(1.03);
+}
+
+.post-list .post-link:focus-visible {
+  outline: 2px solid rgba($brand-color, 0.5);
+  outline-offset: 2px;
 }
 
 .site-header .site-nav {
@@ -183,7 +198,13 @@ samp {
   white-space: nowrap;
   max-width: 100%;
   font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+  text-align: center;
 }
+
+.post-header {
+  text-align: center;
+}
+
 
 @media (max-width: 720px) {
   .post .post-title {
@@ -191,12 +212,6 @@ samp {
   }
 }
 
-.post-header,
-.post-content {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .site-header .wrapper {
   display: flex;
@@ -242,54 +257,42 @@ hr {
   border-top: 1px solid rgba($text-color, 0.12);
 }
 
-a,
-a:visited,
-a:hover,
-a:focus {
+a {
   text-decoration: none;
 }
-.page-content a,
-.page-content a:visited {
-  color: inherit;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  z-index: 0;
-  isolation: isolate;
-  border-radius: 0.4em;
+
+.post-content a,
+.post-content a:visited {
+  color: rgba($text-color, 0.9);
+}
+
+.post-content a {
+  background-image: linear-gradient(to right, rgba($brand-color, 0.22), rgba($brand-color, 0.22));
+  background-repeat: no-repeat;
+  background-size: 0% 0.48em;
+  background-position: 0 90%;
+  border-radius: 0.25em;
   padding: 0 0.06em;
-  transition: transform 160ms cubic-bezier(0.2, 0.8, 0.2, 1), color 160ms ease;
+  display: inline-block;
+  transition: background-size 190ms cubic-bezier(0.2, 0.8, 0.2, 1), color 160ms ease, transform 160ms ease, box-shadow 180ms ease;
+  box-shadow: 0 0 0 0 rgba($brand-color, 0);
 }
 
-.page-content a::after {
-  content: "";
-  position: absolute;
-  inset: -0.22em -0.26em;
-  border-radius: 999px;
-  background: rgba($brand-color, 0.10);
-  box-shadow: 0 0 1.1em rgba($brand-color, 0.35);
-  opacity: 0;
-  transform: scale(0.98);
-  transition: opacity 160ms ease, transform 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
-  z-index: -1;
-}
 
-.page-content a:hover,
-.page-content a:focus {
-  transform: scale(1.025);
+.post-content a:hover,
+.post-content a:focus {
+  background-size: 100% 0.48em;
   color: $text-color;
+  transform: scale(1.03);
+  box-shadow: 0 0 0 0.38em rgba($brand-color, 0.12);
 }
 
-.page-content a:hover::after,
-.page-content a:focus::after {
-  opacity: 1;
-  transform: scale(1.02);
-}
 
-.page-content a:focus-visible {
-  outline: 2px solid rgba($brand-color, 0.55);
+.post-content a:focus-visible {
+  outline: 2px solid rgba($brand-color, 0.5);
   outline-offset: 2px;
 }
+
 .site-nav .page-link,
 .site-nav .page-link:visited {
   color: rgba($text-color, 0.82);

@@ -6,6 +6,7 @@ $link-base-color: #D97757;
 $brand-color: #D97757;
 $code-background-color: #30302E;
 
+$base-font-size: 17px;
 $base-font-family: "TiemposText", serif;
 $base-font-weight: 400;
 
@@ -16,6 +17,14 @@ $base-font-weight: 400;
   src: url('{{ "/assets/fonts/TiemposText-Regular.otf" | relative_url }}') format("opentype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TiemposText";
+  src: url('{{ "/assets/fonts/TiemposText-RegularItalic.otf" | relative_url }}') format("opentype");
+  font-weight: 400;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -31,6 +40,8 @@ body {
   font-family: $base-font-family;
   font-weight: $base-font-weight;
   font-style: normal;
+  font-size: $base-font-size;
+  line-height: 1.7;
   color: $text-color;
   background-color: $background-color;
 }
@@ -78,7 +89,7 @@ samp {
 
 .site-title {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
   letter-spacing: -0.01em;
   text-decoration: none;
@@ -104,6 +115,32 @@ samp {
   max-width: 850px;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.post-header,
+.post-content {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.post-list > li {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba($text-color, 0.12);
+}
+
+.post-list > li:first-child {
+  border-top: 1px solid rgba($text-color, 0.12);
+}
+
+.post-list > li:last-child {
+  border-bottom: 0;
 }
 
 .site-header .site-nav {
@@ -135,6 +172,13 @@ samp {
   color: $brand-color;
   font-family: "MoreDance", $base-font-family;
   font-weight: 400;
+}
+
+.post-header,
+.post-content {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-header .wrapper {
@@ -181,14 +225,35 @@ hr {
   border-top: 1px solid rgba($text-color, 0.12);
 }
 
-a,
-a:visited {
-  color: $text-color;
+a {
+  text-decoration: none;
 }
 
-a:hover,
-a:focus {
+.page-content a,
+.page-content a:visited {
+  color: rgba($text-color, 0.92);
+}
+
+.page-content a {
+  background-image: linear-gradient(rgba($brand-color, 0.18), rgba($brand-color, 0.18)),
+    linear-gradient(rgba($brand-color, 0.12), rgba($brand-color, 0.12));
+  background-repeat: no-repeat;
+  background-size: 0% 100%, 100% 0.18em;
+  background-position: 0 0, 0 88%;
+  border-radius: 0.18em;
+  padding: 0 0.04em;
+  transition: background-size 140ms ease, color 140ms ease;
+}
+
+.page-content a:hover,
+.page-content a:focus {
+  background-size: 100% 100%, 100% 0.18em;
   color: $brand-color;
+}
+
+.page-content a:focus-visible {
+  outline: 2px solid rgba($brand-color, 0.5);
+  outline-offset: 2px;
 }
 
 .site-nav .page-link,

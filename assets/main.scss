@@ -141,24 +141,22 @@ samp {
 
 .post-list .post-link,
 .post-list .post-link:visited {
-  color: rgba($text-color, 0.92);
+  color: rgba($text-color, 0.82);
   display: inline-block;
-  padding: 0.25rem 0.65rem;
-  border-radius: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.6rem;
   background-image: none;
   background-size: auto;
   background-position: 0 0;
-  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease, box-shadow 180ms ease;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
 }
-
 .post-list .post-link:hover,
 .post-list .post-link:focus {
   color: $brand-color;
   background-color: rgba($brand-color, 0.12);
-  box-shadow: 0 0 0 10px rgba($brand-color, 0.08);
-  transform: scale(1.03);
+  text-decoration: none;
 }
-
 .post-list .post-link:focus-visible {
   outline: 2px solid rgba($brand-color, 0.5);
   outline-offset: 2px;
@@ -261,9 +259,15 @@ a {
   text-decoration: none;
 }
 
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
 .post-content a,
 .post-content a:visited {
   color: rgba($text-color, 0.9);
+  text-decoration: none;
 }
 
 .post-content a {
@@ -285,6 +289,7 @@ a {
   color: $text-color;
   transform: scale(1.03);
   box-shadow: 0 0 0 0.38em rgba($brand-color, 0.12);
+  text-decoration: none;
 }
 
 
@@ -299,12 +304,14 @@ a {
   padding: 0.2rem 0.55rem;
   border-radius: 0.6rem;
   transition: background-color 160ms ease, color 160ms ease;
+  text-decoration: none;
 }
 
 .site-nav .page-link:hover,
 .site-nav .page-link:focus {
   color: $brand-color;
   background-color: rgba($brand-color, 0.12);
+  text-decoration: none;
 }
 
 .site-footer a,

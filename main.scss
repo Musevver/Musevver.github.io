@@ -288,7 +288,7 @@ samp {
 
 .site-footer {
   border-top: 2px solid rgb(80, 90, 65);
-  color: rgba($text-color, 0.65);
+  color: rgba(80, 90, 65, 0.85);
   padding: 1.6rem 0 2.2rem;
 }
 
@@ -358,7 +358,7 @@ a:focus {
 
 .site-footer a,
 .site-footer a:visited {
-  color: rgba($text-color, 0.8);
+  color: rgba(80, 90, 65, 0.85);
 }
 
 .site-footer a:hover,

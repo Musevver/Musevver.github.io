@@ -2,7 +2,7 @@
 ---
 $background-color: #1A1A18;
 $text-color: #F5F5E1;
-$link-base-color: #D97757;
+$link-base-color: $text-color;
 $brand-color: #D97757;
 $code-background-color: #2C2C24;
 
@@ -120,7 +120,7 @@ samp {
   font-size: 0.9rem;
   letter-spacing: 0.02em;
   text-transform: none;
-  color: rgb(80, 90, 65);
+  color: rgba($text-color, 0.72);
   margin: 0;
 }
 
@@ -146,7 +146,7 @@ samp {
 }
 
 .post-list > li:not(:last-child) {
-  border-bottom: 1px solid rgba(80, 90, 65, 0.35);
+  border-bottom: 1px solid rgba($text-color, 0.22);
 }
 
 .post-list > li:first-child {
@@ -158,7 +158,7 @@ samp {
   margin: 0 0 0.7rem;
   font-size: 0.95rem;
   letter-spacing: 0.01em;
-  color: rgb(80, 90, 65);
+  color: $text-color;
 }
 
 .post-list h3 {
@@ -179,7 +179,7 @@ samp {
 .post-list .post-link,
 .post-list .post-link:visited {
   font-family: "MiltonianTattoo", $base-font-family;
-  color: rgba($text-color, 0.82);
+  color: $text-color;
   display: inline-block;
   padding: 0.2rem 0.55rem;
   border-radius: 0.6rem;
@@ -191,12 +191,12 @@ samp {
 }
 .post-list .post-link:hover,
 .post-list .post-link:focus {
-  color: $brand-color;
-  background-color: rgba($brand-color, 0.12);
+  color: $text-color;
+  background-color: rgba($text-color, 0.08);
   text-decoration: none;
 }
 .post-list .post-link:focus-visible {
-  outline: 2px solid rgba($brand-color, 0.5);
+  outline: 2px solid rgba($text-color, 0.6);
   outline-offset: 2px;
 }
 
@@ -222,7 +222,7 @@ samp {
   background-color: $background-color;
   border-top: 0;
   padding: 0.85rem 0;
-  border-bottom: 2px solid rgb(80, 90, 65);
+  border-bottom: 2px solid rgba($text-color, 0.22);
 }
 
 .post .post-title {
@@ -246,7 +246,7 @@ samp {
 
 
 .post-meta {
-  color: rgb(80, 90, 65);
+  color: $text-color;
 }
 .post .post-header,
 .post .post-content {
@@ -296,14 +296,14 @@ samp {
 }
 
 .site-footer {
-  border-top: 2px solid rgb(80, 90, 65);
-  color: rgba(80, 90, 65, 0.85);
+  border-top: 2px solid rgba($text-color, 0.22);
+  color: rgba($text-color, 0.72);
   padding: 1.6rem 0 2.2rem;
 }
 
 hr {
   border: 0;
-  border-top: 1px solid rgba(80, 90, 65, 0.35);
+  border-top: 1px solid rgba($text-color, 0.22);
 }
 
 a {
@@ -317,12 +317,12 @@ a:focus {
 }
 .post-content a,
 .post-content a:visited {
-  color: rgba($text-color, 0.9);
+  color: $text-color;
   text-decoration: none;
 }
 
 .post-content a {
-  background-image: linear-gradient(to right, rgba($brand-color, 0.22), rgba($brand-color, 0.22));
+  background-image: linear-gradient(to right, rgba($text-color, 0.18), rgba($text-color, 0.18));
   background-repeat: no-repeat;
   background-size: 0% 0.48em;
   background-position: 0 90%;
@@ -330,7 +330,7 @@ a:focus {
   padding: 0 0.06em;
   display: inline-block;
   transition: background-size 190ms cubic-bezier(0.2, 0.8, 0.2, 1), color 160ms ease, transform 160ms ease, box-shadow 180ms ease;
-  box-shadow: 0 0 0 0 rgba($brand-color, 0);
+  box-shadow: 0 0 0 0 rgba($text-color, 0);
 }
 
 
@@ -339,19 +339,20 @@ a:focus {
   background-size: 100% 0.48em;
   color: $text-color;
   transform: scale(1.03);
-  box-shadow: 0 0 0 0.38em rgba($brand-color, 0.12);
+  box-shadow: 0 0 0 0.38em rgba($text-color, 0.12);
   text-decoration: none;
 }
 
 
 .post-content a:focus-visible {
-  outline: 2px solid rgba($brand-color, 0.5);
+  outline: 2px solid rgba($text-color, 0.6);
   outline-offset: 2px;
 }
 
 .site-nav .page-link,
 .site-nav .page-link:visited {
-  color: rgba($text-color, 0.82);
+  font-family: "MiltonianTattoo", $base-font-family;
+  color: $text-color;
   padding: 0.2rem 0.55rem;
   border-radius: 0.6rem;
   transition: background-color 160ms ease, color 160ms ease;
@@ -360,17 +361,17 @@ a:focus {
 
 .site-nav .page-link:hover,
 .site-nav .page-link:focus {
-  color: $brand-color;
-  background-color: rgba($brand-color, 0.12);
+  color: $text-color;
+  background-color: rgba($text-color, 0.08);
   text-decoration: none;
 }
 
 .site-footer a,
 .site-footer a:visited {
-  color: rgba(80, 90, 65, 0.85);
+  color: $text-color;
 }
 
 .site-footer a:hover,
 .site-footer a:focus {
-  color: $brand-color;
+  color: $text-color;
 }

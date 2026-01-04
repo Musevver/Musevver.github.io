@@ -21,7 +21,7 @@
     <meta name="description" content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   {%- endif -%}
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}?v={{ site.time | date: '%s' }}">
 
   {%- feed_meta -%}
 

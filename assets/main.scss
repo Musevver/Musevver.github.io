@@ -248,7 +248,10 @@ samp {
 .post-meta {
   color: $text-color;
 }
-.post .post-header,
+.post .post-header {
+  max-width: 100%;
+}
+
 .post .post-content {
   max-width: 76ch;
   margin-left: auto;

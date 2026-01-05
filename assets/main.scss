@@ -124,7 +124,7 @@ samp {
   margin: 0;
 }
 
-\.wrapper {
+.wrapper {
   max-width: 1020px;
   margin-left: auto;
   margin-right: auto;
@@ -222,23 +222,29 @@ samp {
   background-color: $background-color;
   border-top: 0;
   padding: 0.85rem 0;
-  border-bottom: 2px solid rgba($text-color, 0.22);
+  border-bottom: 1px solid rgba($text-color, 0.16);
 }
 
 .post .post-title {
   color: $brand-color;
   font-family: "MiltonianTattoo", $base-font-family;
   font-weight: 400;
-  line-height: 0.95;
-  letter-spacing: 0;
-  white-space: nowrap;
-  max-width: 100%;
-  font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  white-space: normal;
+  max-width: 28ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: clamp(2rem, 4.2vw, 3rem);
   text-align: center;
+  text-wrap: balance;
 }
 
 .post-header {
   text-align: center;
+  padding-top: 0.85rem;
 }
 
 
@@ -249,7 +255,9 @@ samp {
   color: $text-color;
 }
 .post .post-header {
-  max-width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post .post-content {
@@ -257,11 +265,7 @@ samp {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 720px) {
-  .post .post-title {
-    white-space: normal;
-  }
-}
+
 
 
 .site-header .wrapper {

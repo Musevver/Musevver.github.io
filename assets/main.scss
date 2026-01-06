@@ -100,7 +100,7 @@ samp {
 }
 
 .site-title {
-  font-family: "MiltonianTattoo", $base-font-family;
+  font-family: "Rother", $base-font-family;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
@@ -178,7 +178,7 @@ samp {
 
 .post-list .post-link,
 .post-list .post-link:visited {
-  font-family: "MiltonianTattoo", $base-font-family;
+  font-family: "Rother", $base-font-family;
   color: $text-color;
   display: inline-block;
   padding: 0.2rem 0.55rem;
@@ -227,7 +227,7 @@ samp {
 
 .post .post-title {
   color: $brand-color;
-  font-family: "MiltonianTattoo", $base-font-family;
+  font-family: "Rother", $base-font-family;
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: 0.01em;
@@ -358,7 +358,7 @@ a:focus {
 
 .site-nav .page-link,
 .site-nav .page-link:visited {
-  font-family: "MiltonianTattoo", $base-font-family;
+  font-family: "Rother", $base-font-family;
   color: $text-color;
   padding: 0.2rem 0.55rem;
   border-radius: 0.6rem;
@@ -382,3 +382,14 @@ a:focus {
 .site-footer a:focus {
   color: $text-color;
 }
+
+::selection {
+  background: rgba(227, 119, 87, 0.28);
+  color: $text-color;
+}
+
+::-moz-selection {
+  background: rgba(227, 119, 87, 0.28);
+  color: $text-color;
+}
+

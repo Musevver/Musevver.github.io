@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- comment -%}
+    Custom <title> to avoid showing "site.title | site.description" in the browser tab.
+    Home page shows just site.title. Other pages show "page.title | site.title".
+  {%- endcomment -%}
+  <title>
+    {%- if page.title and page.url != "/" -%}
+      {{ page.title | escape }} | {{ site.title | escape }}
+    {%- else -%}
+      {{ site.title | escape }}
+    {%- endif -%}
+  </title>
+
+  {%- if page.excerpt -%}
+    <meta name="description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {%- elsif site.description -%}
+    <meta name="description" content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {%- endif -%}
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}?v={{ site.time | date: '%s' }}">
+
+  {%- feed_meta -%}
+
+  <link rel="icon" href="{{ "/favicon.svg" | relative_url }}" type="image/svg+xml">
+</head>

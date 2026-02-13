@@ -1,0 +1,64 @@
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    tags: 'ams'
+  },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<script>
+(function () {
+  function fit(el) {
+    var cs = window.getComputedStyle(el);
+    var start = parseFloat(cs.fontSize);
+    var min = 26;
+
+    el.style.whiteSpace = 'nowrap';
+    el.style.maxWidth = '100%';
+
+    var size = start;
+    el.style.fontSize = size + 'px';
+
+    while (el.scrollWidth > el.clientWidth && size > min) {
+      size -= 1;
+      el.style.fontSize = size + 'px';
+    }
+
+    if (el.scrollWidth > el.clientWidth) {
+      el.style.whiteSpace = 'normal';
+      el.style.fontSize = start + 'px';
+    }
+  }
+
+  function run() {
+    var els = document.querySelectorAll('.post .post-title');
+    if (!els.length) return;
+
+    els.forEach(function (el) {
+      el.style.fontSize = '';
+      fit(el);
+    });
+  }
+
+  function boot() {
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(run);
+    } else {
+      run();
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+
+  window.addEventListener('resize', boot, { passive: true });
+})();
+</script>

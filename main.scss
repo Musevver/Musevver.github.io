@@ -1,0 +1,367 @@
+---
+---
+$background-color: #1A1A18;
+$text-color: #F5F5E1;
+$link-base-color: #D97757;
+$brand-color: #D97757;
+$code-background-color: #2C2C24;
+
+$base-font-size: 18px;
+$base-font-family: "TiemposText", serif;
+$base-font-weight: 400;
+
+@import "minima";
+
+@font-face {
+  font-family: "TiemposText";
+  src: url('{{ "/assets/fonts/TiemposText-Regular.otf" | relative_url }}') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TiemposText";
+  src: url('{{ "/assets/fonts/TiemposText-RegularItalic.otf" | relative_url }}') format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Rother";
+  src: url('{{ "/assets/fonts/RotherRegular.ttf" | relative_url }}') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-style: normal;
+  font-size: $base-font-size;
+  line-height: 1.7;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+.page-content {
+  padding: 1.9rem 0 4.25rem;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-style: normal;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+}
+
+@media (min-width: 700px) {
+  .header-flex {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .brand {
+    grid-column: 2;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-header .site-nav {
+    grid-column: 3;
+    justify-self: end;
+    margin-left: 0;
+  }
+}
+
+.site-title {
+  font-family: "Rother", $base-font-family;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  text-decoration: none;
+  color: $brand-color;
+}
+
+.site-title,
+.site-title:visited {
+  color: $brand-color;
+}
+
+.site-tagline {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: rgb(80, 90, 65);
+  margin: 0;
+}
+
+\.wrapper {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list > li {
+  padding: 2.25rem 0;
+}
+
+.post-list > li:not(:last-child) {
+  border-bottom: 1px solid rgba(80, 90, 65, 0.35);
+}
+
+.post-list > li:first-child {
+  padding-top: 1.6rem;
+}
+
+.post-list .post-meta {
+  display: block;
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  color: rgb(80, 90, 65);
+}
+
+.post-list h3 {
+  margin: 0;
+  line-height: 1.12;
+  font-size: clamp(1.75rem, 2.4vw, 2.35rem);
+}
+
+.post-list p {
+  margin: 0.95rem 0 0;
+  font-size: 1.06rem;
+  line-height: 1.68;
+  color: rgba($text-color, 0.9);
+  max-width: 90ch;
+}
+
+
+.post-list .post-link,
+.post-list .post-link:visited {
+  color: rgba($text-color, 0.82);
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.6rem;
+  background-image: none;
+  background-size: auto;
+  background-position: 0 0;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+.post-list .post-link:hover,
+.post-list .post-link:focus {
+  color: $brand-color;
+  background-color: rgba($brand-color, 0.12);
+  text-decoration: none;
+}
+.post-list .post-link:focus-visible {
+  outline: 2px solid rgba($brand-color, 0.5);
+  outline-offset: 2px;
+}
+
+.site-header .site-nav {
+  margin-left: auto;
+}
+
+@media (min-width: 700px) {
+  .site-header .nav-trigger,
+  .site-header label[for="nav-trigger"] {
+    display: none !important;
+  }
+
+  .site-header .site-nav .trigger {
+    display: flex !important;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+}
+
+.site-header {
+  background-color: $background-color;
+  border-top: 0;
+  padding: 0.85rem 0;
+  border-bottom: 2px solid rgb(80, 90, 65);
+}
+
+.post .post-title {
+  color: $brand-color;
+  font-family: "Rother", $base-font-family;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+  text-align: center;
+}
+
+.post-header {
+  text-align: center;
+}
+
+
+
+
+
+.post-meta {
+  color: rgb(80, 90, 65);
+}
+.post .post-header,
+.post .post-content {
+  max-width: 76ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 720px) {
+  .post .post-title {
+    white-space: normal;
+  }
+}
+
+
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+  .site-header .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .site-header .brand {
+    grid-column: 1;
+    justify-self: center;
+    margin: 0;
+  }
+
+  .site-header .brand .site-title {
+    margin: 0;
+  }
+
+  .site-header .site-nav {
+    grid-column: 2;
+    justify-self: center;
+    margin-left: 0;
+  }
+}
+
+.site-tagline {
+  display: none !important;
+}
+
+.site-footer {
+  border-top: 2px solid rgb(80, 90, 65);
+  color: rgba(80, 90, 65, 0.85);
+  padding: 1.6rem 0 2.2rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(80, 90, 65, 0.35);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.post-content a,
+.post-content a:visited {
+  color: rgba($text-color, 0.9);
+  text-decoration: none;
+}
+
+.post-content a {
+  background-image: linear-gradient(to right, rgba($brand-color, 0.22), rgba($brand-color, 0.22));
+  background-repeat: no-repeat;
+  background-size: 0% 0.48em;
+  background-position: 0 90%;
+  border-radius: 0.25em;
+  padding: 0 0.06em;
+  display: inline-block;
+  transition: background-size 190ms cubic-bezier(0.2, 0.8, 0.2, 1), color 160ms ease, transform 160ms ease, box-shadow 180ms ease;
+  box-shadow: 0 0 0 0 rgba($brand-color, 0);
+}
+
+
+.post-content a:hover,
+.post-content a:focus {
+  background-size: 100% 0.48em;
+  color: $text-color;
+  transform: scale(1.03);
+  box-shadow: 0 0 0 0.38em rgba($brand-color, 0.12);
+  text-decoration: none;
+}
+
+
+.post-content a:focus-visible {
+  outline: 2px solid rgba($brand-color, 0.5);
+  outline-offset: 2px;
+}
+
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: rgba($text-color, 0.82);
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.6rem;
+  transition: background-color 160ms ease, color 160ms ease;
+  text-decoration: none;
+}
+
+.site-nav .page-link:hover,
+.site-nav .page-link:focus {
+  color: $brand-color;
+  background-color: rgba($brand-color, 0.12);
+  text-decoration: none;
+}
+
+.site-footer a,
+.site-footer a:visited {
+  color: rgba(80, 90, 65, 0.85);
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: $brand-color;
+}

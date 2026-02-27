@@ -25,7 +25,7 @@ This is the short version of it. I'm working on the bigger one.
 
 **9.** Under persistence, remainder becomes return-bearing as pressure. This return is $\color{#D97757}{\text{Jinn}}$.
 
-**10.** Jinn is not primarily the return of repressed content but the return-pressure of foreclosed possibility.
+**10.** Jinn is not primarily the return of repressed psychic content but the return-pressure of foreclosed possibility.
 
 **11.** When Binding seeks escape from its own remainder, it bottles. When it tries to ground itself from nowhere, it enters $\color{#D97757}{\text{Gafol}}$. Gafol is the attempt to stand outside Binding and explain it from beyond its own condition.
 
